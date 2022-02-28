@@ -19,6 +19,18 @@ def get_img_url(row):
     img_tag = row.find("img", attrs={"unveil"})
     print(img_tag['data-src'])
 
+def get_rating(row):
+    """Scraps rating"""
+
+def get_user_rating(row):
+    """Scraps user rating"""
+
+def get_amount_of_user_ratings(row):
+    """Scraps amount of user ratings"""
+
+def get_price(row):
+    """Scraps price"""
+
 for row in firstrow_data:
     """Extract data from upper of table row"""
 
