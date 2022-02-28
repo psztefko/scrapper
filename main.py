@@ -15,14 +15,17 @@ secondrow_data = table_data.tbody.find_all("tr", attrs={"class": "mp-whisky-item
 def get_name(row):
     return row.find("a", attrs={"mp-whisky-item-name"}).get_text()
 
-
+def get_img_url(row):
+    img_tag = row.find("img", attrs={"unveil"})
+    print(img_tag['data-src'])
 
 for row in firstrow_data:
     """Extract data from upper of table row"""
 
+    get_img_url(row)
 
-
-
+for row in secondrow_data:
+    """Extract data from lower of table row"""
 
 
 
